@@ -2,9 +2,10 @@ name: Callback
 
 on:
   workflow_dispatch:
+    branches: [ main ]
 
 jobs:
-  process-token:
+  get-param:
     runs-on: ubuntu-latest
     steps:
       - name: get param
