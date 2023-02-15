@@ -1,0 +1,12 @@
+name: Callback
+
+on:
+  workflow_dispatch:
+
+jobs:
+  process-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get param
+        run: |
+          echo "param: ${{ secrets.param }}"
